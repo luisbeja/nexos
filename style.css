@@ -272,8 +272,15 @@ color: #fff;
 .btn--blue {
     background-color: #3a9fff;
 }
+
 .btn--blue:hover {
     background-color: #63b2fc;
+}
+.btn--green:hover {
+    background-color: #27ae60;
+}
+.btn--green {
+    background-color: #27ae60;
 }
 .btn--width{
   width: 120px;
