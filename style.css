@@ -215,7 +215,7 @@ background-image: url("https://image.ibb.co/de6JzG/bitmap_1_1.png");
 }
 
 .btn{
-  background-color:#3a9fff;
+  background-color:#ff9001;
   border-radius: 20px;
   padding: 10px 25px;
   color: #fff;
@@ -231,7 +231,7 @@ background-image: url("https://image.ibb.co/de6JzG/bitmap_1_1.png");
 
 .btn:hover{
 box-shadow: 0px 25px 18px -6px rgba(0, 0, 0,0.2);
-background-color: #63b2fc;
+background-color: #043856;
 color: #fff;
 }
 
@@ -514,7 +514,7 @@ filter: drop-shadow(0px 7px 4px rgba(0,0,0,.2));
 }
 .header__link:hover{
   text-decoration: none;
-  color:#3a9fff;
+  color:#ff9001;
 }
 .navbar-toggle .icon-bar{
   background-color: #8198ae;
