@@ -112,6 +112,33 @@ background-image: url("https://image.ibb.co/de6JzG/bitmap_1_1.png");
     grid-template-columns: 1fr;
   }
 }
+ 
+.partner__text {
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  height: 100%;
+  text-align: center;
+}
+
+.partner__text img.icon-img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  color: #1f4568;
+}
+
+.partner__text h4 {
+  margin: 10px 0 5px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.partner__text p {
+  font-size: 14px;
+  color: #333;
+}
+
 /*final*/
 
 
@@ -488,7 +515,7 @@ vertical-align: middle;
 font-weight: 700;
 }
 .item__description {
-    margin-top: 35px;
+    margin-top: 10px;
     color: #8198ae;
     line-height: 23px;
 }
@@ -624,6 +651,7 @@ filter: drop-shadow(0px 7px 4px rgba(0,0,0,.2));
     margin: 5px 0;
 }
 .partner{
+  margin-top: 50px;
   margin-bottom:15px;
   text-align:center;
 }
