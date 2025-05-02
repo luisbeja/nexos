@@ -16,6 +16,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
 <link rel="stylesheet" href="style.css"> 
 
+
 </head>
 
 <body>
@@ -28,7 +29,7 @@
 <body>
 <header class="header">
   <div class="container header__container">
-<div class="header__logo"><img class="header__img" src="image/logonex1.png"> <h1 class="header__title">NE<span class="header__light">XOS</span></h1></div> 
+<div class="header__logo"><img class="header__img" src="image/2.png"> </div> 
      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
@@ -78,83 +79,150 @@
 <div class="row row--center row--margin">
   
   <div class="col-md-3 col-sm-2 price-box price-box--purple">
-    <div class="price-box__wrap">
-      <div class="price-box__img"></div>
-      <h1 class="price-box__title">
-        Linea 1 - Nexos Negocios
-      </h1>
-      <p class="price-box__feat">
-        Matenemos tus Finanzas en Orden
-      </p>
-      <ul class="price-box__list">
-        <li class="price-box__list-el">Gestión Empresarial</li>
-        <li class="price-box__list-el">Gestión Fical y Tributaria</li>
-        <li class="price-box__list-el">Gestión Laboral</li>
-        <li class="price-box__list-el">Gestión Contable</li>
-        <li class="price-box__list-el">Asesoría Legal Empresarial</li>
-      </ul>
-       <div class="price-box__btn">
-      <a class="btn btn--purple btn--width">Start now</a>
-    </div>
-  </div>
-  </div>
-  <!-- second -->
-  <div class="col-md-3 col-sm-2 price-box price-box--violet">
-  <div class="price-box__wrap">
-      <div class="price-box__img"></div>
-      <h1 class="price-box__title">
-        Linea 2 - Nexos Calidad
-      </h1>
-      <p class="price-box__feat">
-        Features
-      </p>
-      <ul class="price-box__list">
-        <li class="price-box__list-el">Sistema Integrado de Gestión</li>
-        <li class="price-box__list-el">ISO 9001 - ISO 14001 - ISO 45001</li>
-        <li class="price-box__list-el">Aplicaciones de Estándares según ley N° 29738 - DS 005-2012-TR</li>
-      </ul>
-      <div class="price-box__btn">
-      <a class="btn btn--violet btn--width">Start now</a>
-    </div>
-  </div>
-  </div>
-
-<!-- terzo -->
-  <div class="col-md-3 col-sm-2 price-box price-box--blue">
-  <div class="price-box__wrap">
-      <div class="price-box__img"></div>
-      <h1 class="price-box__title">
-        Linea 3 - Nexos Legal
-      </h1>
-      <p class="price-box__feat">
-        Features
-      </p>
-      <ul class="price-box__list">
-        <li class="price-box__list-el">Asesoria Legal Empresarial</li>
-      </ul>
-    <div class="price-box__btn">
-      <a class="btn btn--blue btn--width">Start now</a>
-    </div>
-  </div>
-  </div>
- <!-- cuarto -->
-<div class="col-md-3 col-sm-2 price-box price-box--green">
-    <div class="price-box__wrap">
-      <div class="price-box__img"></div>
-      <h1 class="price-box__title">
-        Linea 4 - Nexos Digital
-      </h1>
-      <p class="price-box__feat">
-        Features
-      </p>
-      <ul class="price-box__list">
-        <li class="price-box__list-el">Tecnologias de la Información</li>
-      </ul>
-      <div class="price-box__btn">
-        <a class="btn btn--green btn--width">Start now</a>
+    <div class="flip-card" id="card1">
+      <div class="flip-card-inner">
+        <!-- Frente -->
+        <div class="flip-card-front price-box__wrap">
+          <div class="price-box__img"></div>
+          <h1 class="price-box__title">Línea 1 - Nexos Negocios</h1>
+          <p class="price-box__feat">Mantenemos tus Finanzas en Orden</p>
+          <ul class="price-box__list">
+            <li class="price-box__list-el">Gestión Empresarial</li>
+            <li class="price-box__list-el">Gestión Fiscal y Tributaria</li>
+            <li class="price-box__list-el">Gestión Laboral</li>
+            <li class="price-box__list-el">Gestión Contable</li>
+            <li class="price-box__list-el">Asesoría Legal Empresarial</li>
+          </ul>
+          <div class="price-box__btn">
+            <a href="#" class="btn btn--purple btn--width" onclick="flip('card1', true); return false;">Start now</a>
+          </div>
+        </div>
+  
+        <!-- Reverso -->
+        <div class="flip-card-back price-box__wrap">
+          <h1 class="price-box__title">Más Información</h1>
+          <p class="price-box__feat">Detalles adicionales</p>
+          <ul class="price-box__list">
+            <li class="price-box__list-el">Soporte contable especializado</li>
+            <li class="price-box__list-el">Optimización tributaria</li>
+            <li class="price-box__list-el">Consultoría personalizada</li>
+          </ul>
+          <div class="price-box__btn">
+            <a href="#" class="btn btn--purple btn--width" onclick="flip('card1', false); return false;">Volver</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
+  
+
+  <!-- second -->
+  <div class="col-md-3 col-sm-2 price-box price-box--violet">
+    <div class="flip-card" id="card2">
+      <div class="flip-card-inner">
+        <!-- Frente -->
+        <div class="flip-card-front price-box__wrap">
+          <div class="price-box__img"></div>
+          <h1 class="price-box__title">Linea 2 - Nexos Calidad</h1>
+          <p class="price-box__feat">Features</p>
+          <ul class="price-box__list">
+            <li class="price-box__list-el">Sistema Integrado de Gestión</li>
+            <li class="price-box__list-el">ISO 9001 - ISO 14001 - ISO 45001</li>
+            <li class="price-box__list-el">Aplicaciones según ley N° 29738 - DS 005-2012-TR</li>
+          </ul>
+          <div class="price-box__btn">
+            <a href="#" class="btn btn--violet btn--width" onclick="flip('card2', true); return false;">Start now</a>
+          </div>
+        </div>
+  
+        <!-- Reverso -->
+        <div class="flip-card-back price-box__wrap">
+          <h1 class="price-box__title">Más Información</h1>
+          <p class="price-box__feat">Descripción detallada</p>
+          <ul class="price-box__list">
+            <li class="price-box__list-el">Soporte técnico permanente</li>
+            <li class="price-box__list-el">Auditorías internas periódicas</li>
+            <li class="price-box__list-el">Capacitación al personal</li>
+          </ul>
+          <div class="price-box__btn">
+            <a href="#" class="btn btn--violet btn--width" onclick="flip('card2', false); return false;">Volver</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+<!-- terzo -->
+<div class="col-md-3 col-sm-2 price-box price-box--blue">
+  <div class="flip-card" id="card3">
+    <div class="flip-card-inner">
+      <!-- Frente -->
+      <div class="flip-card-front price-box__wrap">
+        <div class="price-box__img"></div>
+        <h1 class="price-box__title">Línea 3 - Nexos Legal</h1>
+        <p class="price-box__feat">Features</p>
+        <ul class="price-box__list">
+          <li class="price-box__list-el">Asesoría Legal Empresarial</li>
+        </ul>
+        <div class="price-box__btn">
+          <a href="#" class="btn btn--blue btn--width" onclick="flip('card3', true); return false;">Start now</a>
+        </div>
+      </div>
+
+      <!-- Reverso -->
+      <div class="flip-card-back price-box__wrap">
+        <h1 class="price-box__title">Más Información</h1>
+        <p class="price-box__feat">Consultoría Legal</p>
+        <ul class="price-box__list">
+          <li class="price-box__list-el">Defensa legal empresarial</li>
+          <li class="price-box__list-el">Asistencia en normativas</li>
+          <li class="price-box__list-el">Contratos y litigios</li>
+        </ul>
+        <div class="price-box__btn">
+          <a href="#" class="btn btn--blue btn--width" onclick="flip('card3', false); return false;">Volver</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ <!-- cuarto -->
+ <div class="col-md-3 col-sm-2 price-box price-box--green">
+  <div class="flip-card" id="card4">
+    <div class="flip-card-inner">
+      <!-- Frente -->
+      <div class="flip-card-front price-box__wrap">
+        <div class="price-box__img"></div>
+        <h1 class="price-box__title">Línea 4 - Nexos Digital</h1>
+        <p class="price-box__feat">Features</p>
+        <ul class="price-box__list">
+          <li class="price-box__list-el">Tecnologías de la Información</li>
+        </ul>
+        <div class="price-box__btn">
+          <a href="#" class="btn btn--green btn--width" onclick="flip('card4', true); return false;">Start now</a>
+        </div>
+      </div>
+
+      <!-- Reverso -->
+      <div class="flip-card-back price-box__wrap">
+        <h1 class="price-box__title">Más Información</h1>
+        <p class="price-box__feat">Soluciones Digitales</p>
+        <ul class="price-box__list">
+          <li class="price-box__list-el">Desarrollo Web y Móvil</li>
+          <li class="price-box__list-el">Automatización de procesos</li>
+          <li class="price-box__list-el">Soporte TI</li>
+        </ul>
+        <div class="price-box__btn">
+          <a href="#" class="btn btn--green btn--width" onclick="flip('card4', false); return false;">Volver</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
    
   
 
@@ -352,8 +420,8 @@
   <div class="container">
     <div class="row">
      <h1 class="row__title">
-    Contact Us </h1>
-  <h2 class="row__sub">Feel free to ask any questions</h2>
+      Contáctenos </h1>
+  <h2 class="row__sub">No dudes en hacer cualquier pregunta.</h2>
     </div>
     <div class="row row--margin">
       <div class="col-md-1"></div>
@@ -376,33 +444,34 @@
       <div class="col-md-6">
         <form id="contact" class="form">
           <div class="form-group">
-            <select class="form__field form__select">
-              <option selected value>Choose topic*</option>
-              <option value=1>Pricing</option>
-              <option value=2>Success Stories</option>
+            <select id="linea" class="form__field form__select">
+              <option selected value="Linea 1">Linea 1</option>
+              <option value="Linea 2">Linea 2</option>
+              <option value="Linea 3">Linea 3</option>
+              <option value="Linea 4">Linea 4</option>
             </select>
             </div>
            <div class="form-group">
              <div class="form__field--half">
-            <input type="text" placeholder="Name*" class="form__field form__text"></input>
-             </div>
+              <input id="nombres" type="text" placeholder="Nombres" class="form__field form__text">
+            </div>
           <div class="form__field--half">
-          <input type="text" placeholder="Surname" class="form__field form__text"></input>
+            <input id="apellidos" type="text" placeholder="Apellidos" class="form__field form__text">
           </div>
           </div>
       
         <div class="form-group">
           <div class="form__field--half">
-            <input type="text" placeholder="Email address*" class="form__field form__text"></input>
+            <input id="email" type="text" placeholder="Email" class="form__field form__text">
           </div>
          <div class="form__field--half">
-          <input type="text" placeholder="Phone number" class="form__field form__text"></input>
-    </div>
+          <input id="telefono" type="text" placeholder="Telefono" class="form__field form__text">
+        </div>
           </div>
   
           <div class="form-group">
-            <textarea type="text" placeholder="Your messsage*" class="form__field form__textarea"></textarea>
-            <button class="btn btn--up btn--width" type="submit">Submit</button>
+            <textarea id="mensaje" placeholder="Mensaje" class="form__field form__textarea"></textarea>
+            <button class="btn btn--up btn--width" type="submit" id="whatsappBtn">Enviar</button>
           </div>
         </form>
       </div>   
@@ -411,25 +480,42 @@
   </div>
 </div>
 
-<div class="sect sect--violet ">
-  <img src="https://image.ibb.co/fWyVtb/path3762.png" class="career-img">
+<div class="sect sect--violet">
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <h1 class="career_title">Oh! Your have digged our website in search for the new job?</h1>
-        <h1 class="career_sub">We will pleased to have you onboard! Check open positions.</h1>
-        <a href="#" class="btn btn--white btn--width">Careers</a>
+    <div class="row align-items-start">
+      <!-- Columna izquierda: texto -->
+      <div class="col-md-6 text-start">
+        <h1 class="career_title">Nuestros reconocimientos</h1>
+        <p class="career_sub">Estas son algunas de las distinciones que hemos recibido por nuestro compromiso y excelencia.</p>
+      </div>
+
+      <!-- Columna derecha: imágenes -->
+      <div class="col-md-6">
+        <div class="reconocimientos-grid">
+          <img src="image/2.1.png" alt="Reconocimiento 1">
+          <img src="image/3.1.png" alt="Reconocimiento 2">
+          <img src="image/4.png" alt="Reconocimiento 3">
+          <img src="image/5.png" alt="Reconocimiento 4">
+          <img src="image/6.png" alt="Reconocimiento 5">
+          <img src="image/7.png" alt="Reconocimiento 6">
+          <img src="image/8.png" alt="Reconocimiento 7">
+          <img src="image/9.png" alt="Reconocimiento 8">
+          <img src="image/10.png" alt="Reconocimiento 9">
+          <img src="image/11.png" alt="Reconocimiento 10">
+          <img src="image/12.png" alt="Reconocimiento 11">
+          <img src="image/13.png" alt="Reconocimiento 12">
+        </div>
       </div>
     </div>
   </div>
-  
 </div>
+
 
 <footer class="footer">
   <div class="container">
     <div class="row">
       <div class="col-md-2 col-xs-6">
-       <img class="footer__img" src="https://image.ibb.co/kcVou6/path3000.png"> <h1 class="footer__title">Bricks<span class="footer__light">.io</span></h1></div>
+       <img class="footer__img" src="image/2.png"> <h1 class="footer__title"></div>
       <div class="col-md-10 col-xs-6">
         <div class="footer__social">
           <a href="#" class="footer__social-l">
@@ -456,7 +542,53 @@
   
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script  src="https://cdpn.io/cpe/boomboom/pen.js?key=pen.js-465043a0-9ad5-ad56-b2e9-e14c38765adb" crossorigin></script>
+  
+<script  src="https://cdpn.io/cpe/boomboom/pen.js?key=pen.js-465043a0-9ad5-ad56-b2e9-e14c38765adb" crossorigin></script>
+<script>
+  function flip(cardId, showBack) {
+    const card = document.getElementById(cardId);
+    if (!card) return;
+
+    if (showBack) {
+      card.classList.add('flipped');
+    } else {
+      card.classList.remove('flipped');
+    }
+  }
+
+  document.getElementById('whatsappBtn').addEventListener('click', function (e) {
+    e.preventDefault();
+
+    const linea = document.getElementById('linea').value.trim();
+    const nombres = document.getElementById('nombres').value.trim();
+    const apellidos = document.getElementById('apellidos').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const telefono = document.getElementById('telefono').value.trim();
+    const mensaje = document.getElementById('mensaje').value.trim();
+
+    // Validación básica
+    if (!nombres || !apellidos || !email || !telefono || !mensaje) {
+      alert('Por favor, complete todos los campos obligatorios.');
+      return;
+    }
+
+    const numero = '51998261424'; // sin +
+    const texto = `Hola, quiero contactar con ustedes.\n` +
+      `*Línea:* ${linea}\n` +
+      `*Nombres:* ${nombres}\n` +
+      `*Apellidos:* ${apellidos}\n` +
+      `*Email:* ${email}\n` +
+      `*Teléfono:* ${telefono}\n` +
+      `*Mensaje:* ${mensaje}`;
+
+    const url = `https://web.whatsapp.com/send?phone=${numero}&text=${encodeURIComponent(texto)}`;
+    window.open(url, '_blank');
+
+  });
+
+</script>
+
+
 </body>
 
 </html>
