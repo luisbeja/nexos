@@ -8,12 +8,20 @@ html, body{
   color: #1f4568;
 }
 
+
+main {
+  flex: 1; /* Esto hace que el contenido principal tome todo el espacio disponible */
+}
+
 body{
 background-image: url("https://image.ibb.co/de6JzG/bitmap_1_1.png");
   background-size:cover;
   background-repeat:no-repeat;
   background-position: center;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 /* colors 8a3aff, 6f79ff, 3a9fff black-> 1f4568  grey->8198ae*/
@@ -85,12 +93,17 @@ background-image: url("https://image.ibb.co/de6JzG/bitmap_1_1.png");
 
 .reconocimientos-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
   gap: 30px;
   justify-content: end;
 }
 
 .reconocimientos-grid img {
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  object-fit: contain;
   width: 100%;
   height: auto;
   max-width: 200px;
@@ -998,7 +1011,9 @@ left: 20%;
 
 .footer{
  background-color: #1f4467; 
-  padding: 40px 0; 
+  padding: 40px 0;
+  margin-top: auto;
+ 
 }
 
 
